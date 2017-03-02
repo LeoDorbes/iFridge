@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7QY-VA-bXO" id="XQh-zS-FIN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MY     FRIDGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGQ-gT-q38">
@@ -36,10 +36,6 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="fridge.ico" id="tCd-5e-dRB">
-                                                    <rect key="frame" x="15" y="10" width="128" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -48,7 +44,7 @@
                                         <rect key="frame" x="0.0" y="204" width="375" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N5A-0L-aHM" id="0oU-Y2-bdS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="97.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bK-2v-UVL">
@@ -63,7 +59,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.0" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
@@ -71,7 +67,7 @@
                                         <rect key="frame" x="0.0" y="302" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="izL-RK-hXO" id="X5i-r7-30c">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJq-a5-l1P">
@@ -93,7 +89,7 @@
                                         <rect key="frame" x="0.0" y="399" width="375" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gbz-Nq-pPb" id="TjP-qk-gR4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwZ-tN-G7f">
@@ -137,7 +133,7 @@
         <scene sceneID="ISI-J4-Mhq">
             <objects>
                 <navigationController id="dQX-xf-U63" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fCy-IB-q2E">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fCy-IB-q2E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -218,7 +214,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHI-3P-rH0" id="aRA-HM-P1D">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -234,7 +230,4 @@
             <point key="canvasLocation" x="953" y="-138"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="fridge.ico" width="128" height="128"/>
-    </resources>
 </document>
