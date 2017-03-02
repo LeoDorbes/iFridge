@@ -14,6 +14,9 @@
 		2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB281E681452005C696D /* LaunchScreen.storyboard */; };
 		2855AB351E681452005C696D /* MyFridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB341E681452005C696D /* MyFridgeTests.swift */; };
 		2855AB401E681452005C696D /* MyFridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB3F1E681452005C696D /* MyFridgeUITests.swift */; };
+		2855AB541E683CC5005C696D /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB511E683CC5005C696D /* list.png */; };
+		2855AB551E683CC5005C696D /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB521E683CC5005C696D /* exit.png */; };
+		2855AB561E683CC5005C696D /* fridge.ico in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB531E683CC5005C696D /* fridge.ico */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2855AB3B1E681452005C696D /* MyFridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB3F1E681452005C696D /* MyFridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeUITests.swift; sourceTree = "<group>"; };
 		2855AB411E681452005C696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2855AB511E683CC5005C696D /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = ../../list.png; sourceTree = "<group>"; };
+		2855AB521E683CC5005C696D /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exit.png; path = ../../exit.png; sourceTree = "<group>"; };
+		2855AB531E683CC5005C696D /* fridge.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; name = fridge.ico; path = ../../fridge.ico; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				2855AB211E681452005C696D /* ViewController.swift */,
 				2855AB231E681452005C696D /* Main.storyboard */,
 				2855AB261E681452005C696D /* Assets.xcassets */,
+				2855AB511E683CC5005C696D /* list.png */,
+				2855AB521E683CC5005C696D /* exit.png */,
+				2855AB531E683CC5005C696D /* fridge.ico */,
 				2855AB281E681452005C696D /* LaunchScreen.storyboard */,
 				2855AB2B1E681452005C696D /* Info.plist */,
 			);
@@ -232,8 +241,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2855AB561E683CC5005C696D /* fridge.ico in Resources */,
+				2855AB541E683CC5005C696D /* list.png in Resources */,
 				2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */,
 				2855AB271E681452005C696D /* Assets.xcassets in Resources */,
+				2855AB551E683CC5005C696D /* exit.png in Resources */,
 				2855AB251E681452005C696D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +515,7 @@
 				2855AB461E681452005C696D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2855AB471E681452005C696D /* Build configuration list for PBXNativeTarget "MyFridgeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +524,7 @@
 				2855AB491E681452005C696D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2855AB4A1E681452005C696D /* Build configuration list for PBXNativeTarget "MyFridgeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +533,7 @@
 				2855AB4C1E681452005C696D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
