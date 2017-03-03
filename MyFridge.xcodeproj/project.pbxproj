@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2810FCAD1E696F5C0099EC9D /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCAC1E696F5C0099EC9D /* fridge.png */; };
+		2810FCB11E6973ED0099EC9D /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCB01E6973ED0099EC9D /* mail.png */; };
+		2810FCB31E69740B0099EC9D /* basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCB21E69740B0099EC9D /* basket.png */; };
 		2855AB201E681452005C696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB1F1E681452005C696D /* AppDelegate.swift */; };
 		2855AB221E681452005C696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB211E681452005C696D /* ViewController.swift */; };
 		2855AB251E681452005C696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB231E681452005C696D /* Main.storyboard */; };
@@ -35,7 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2810FCAC1E696F5C0099EC9D /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fridge.png; path = ../../../Downloads/fridge.png; sourceTree = "<group>"; };
+		2810FCB01E6973ED0099EC9D /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		2810FCB21E69740B0099EC9D /* basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basket.png; sourceTree = "<group>"; };
 		2855AB1C1E681452005C696D /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB1F1E681452005C696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2855AB211E681452005C696D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,8 +106,9 @@
 				2855AB231E681452005C696D /* Main.storyboard */,
 				2855AB261E681452005C696D /* Assets.xcassets */,
 				2855AB281E681452005C696D /* LaunchScreen.storyboard */,
-				2810FCAC1E696F5C0099EC9D /* fridge.png */,
+				2810FCB21E69740B0099EC9D /* basket.png */,
 				2855AB2B1E681452005C696D /* Info.plist */,
+				2810FCB01E6973ED0099EC9D /* mail.png */,
 			);
 			path = MyFridge;
 			sourceTree = "<group>";
@@ -237,7 +240,8 @@
 			files = (
 				2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */,
 				2855AB271E681452005C696D /* Assets.xcassets in Resources */,
-				2810FCAD1E696F5C0099EC9D /* fridge.png in Resources */,
+				2810FCB31E69740B0099EC9D /* basket.png in Resources */,
+				2810FCB11E6973ED0099EC9D /* mail.png in Resources */,
 				2855AB251E681452005C696D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
