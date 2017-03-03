@@ -18,6 +18,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="sgD-gv-VcL" kind="relationship" relationship="viewControllers" id="NLU-mI-du4"/>
@@ -112,6 +114,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Ma liste de courses" id="VnN-FN-8ag">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C7Z-7I-k4C">
+                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addBtnPressed:" destination="x3y-X0-w2G" id="wLj-jd-P6k"/>
                             </connections>
