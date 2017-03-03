@@ -37,6 +37,19 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            let row = indexPath.row
+            liste.remove(at: row)
+            self.tableView.reloadData()
+            // handle delete (by removing the data from your array and updating the tableview)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,8 +57,10 @@ class ViewController: UITableViewController {
     
     
     func promptForAnswer() {
-        let ac = UIAlertController(title: "Entrez le nom de l'article", message: nil, preferredStyle: .alert)
-        ac.addTextField()
+        let ac = UIAlertController(title: "Entrez l'article", message: nil, preferredStyle: .alert)
+        ac.addTextField{(textfield : UITextField) -> Void in
+            textfield.placeholder = "Nom"
+        }
         
         let submitAction = UIAlertAction(title: "Ok", style: .default) { [unowned ac] _ in
             if let answer = ac.textFields![0].text
