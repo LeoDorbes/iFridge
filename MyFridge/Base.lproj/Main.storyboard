@@ -229,15 +229,18 @@
             </objects>
             <point key="canvasLocation" x="-68" y="-82"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Notifications-->
         <scene sceneID="6gi-7i-7Ep">
             <objects>
                 <navigationController id="vsh-cL-Htk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="GDe-Dx-Uje"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" id="GDe-Dx-Uje"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dTs-mY-O6r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="BPv-2N-XEu" kind="relationship" relationship="rootViewController" id="wJF-pz-wqn"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NH9-vV-ByE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,10 +269,11 @@
                             <outlet property="delegate" destination="BPv-2N-XEu" id="OJV-xc-mvG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="LHN-VS-0EM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86h-te-3Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-554" y="616"/>
+            <point key="canvasLocation" x="-503" y="616"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="9kK-dH-S3V">
@@ -299,11 +303,11 @@
             </objects>
             <point key="canvasLocation" x="646" y="-82"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Liste-->
         <scene sceneID="tjc-KB-xtu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C5J-rE-TRJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="3Ay-FB-nQL"/>
+                    <tabBarItem key="tabBarItem" title="Liste" id="3Ay-FB-nQL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="05f-c5-rfI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -318,11 +322,11 @@
             </objects>
             <point key="canvasLocation" x="-810.39999999999998" y="-754.27286356821594"/>
         </scene>
-        <!--Item-->
+        <!--Fridge-->
         <scene sceneID="yWh-DT-tfp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sgD-gv-VcL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gBo-vE-vwz"/>
+                    <tabBarItem key="tabBarItem" title="Fridge" image="dc07e0877f7ea9115afeb619eb331c8d.jpg" id="gBo-vE-vwz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8dq-aC-OIC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -338,4 +342,7 @@
             <point key="canvasLocation" x="-810" y="-82"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dc07e0877f7ea9115afeb619eb331c8d.jpg" width="16" height="16"/>
+    </resources>
 </document>
