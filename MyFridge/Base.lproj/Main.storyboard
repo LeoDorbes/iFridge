@@ -233,7 +233,7 @@
         <scene sceneID="6gi-7i-7Ep">
             <objects>
                 <navigationController id="vsh-cL-Htk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" image="notes.png" id="GDe-Dx-Uje"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" id="GDe-Dx-Uje"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dTs-mY-O6r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -307,7 +307,7 @@
         <scene sceneID="tjc-KB-xtu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C5J-rE-TRJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Liste" image="mylist.png" id="3Ay-FB-nQL"/>
+                    <tabBarItem key="tabBarItem" title="Liste" id="3Ay-FB-nQL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="05f-c5-rfI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -326,7 +326,7 @@
         <scene sceneID="yWh-DT-tfp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sgD-gv-VcL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fridge" image="home.png" id="gBo-vE-vwz"/>
+                    <tabBarItem key="tabBarItem" title="Fridge" id="gBo-vE-vwz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8dq-aC-OIC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -342,9 +342,4 @@
             <point key="canvasLocation" x="-810" y="-82"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="home.png" width="44" height="44"/>
-        <image name="mylist.png" width="44" height="44"/>
-        <image name="notes.png" width="44" height="44"/>
-    </resources>
 </document>
