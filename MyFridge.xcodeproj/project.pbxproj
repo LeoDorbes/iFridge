@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280F71EE1E69A921006D159E /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71ED1E69A921006D159E /* eat.png */; };
+		280F71F01E69A97D006D159E /* courses.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71EF1E69A97D006D159E /* courses.png */; };
+		280F71F21E69AA45006D159E /* notifs.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71F11E69AA45006D159E /* notifs.png */; };
 		2810FCB71E6976E50099EC9D /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCB61E6976E50099EC9D /* fridge.png */; };
-		2810FCC31E697EEB0099EC9D /* notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCC01E697EEB0099EC9D /* notes.png */; };
-		2810FCC41E697EEB0099EC9D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCC11E697EEB0099EC9D /* home.png */; };
-		2810FCC51E697EEB0099EC9D /* mylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCC21E697EEB0099EC9D /* mylist.png */; };
 		2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */; };
 		2855AB201E681452005C696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB1F1E681452005C696D /* AppDelegate.swift */; };
 		2855AB221E681452005C696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB211E681452005C696D /* ViewController.swift */; };
@@ -39,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		280F71ED1E69A921006D159E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
+		280F71EF1E69A97D006D159E /* courses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = courses.png; sourceTree = "<group>"; };
+		280F71F11E69AA45006D159E /* notifs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifs.png; sourceTree = "<group>"; };
 		2810FCB61E6976E50099EC9D /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge.png; sourceTree = "<group>"; };
-		2810FCC01E697EEB0099EC9D /* notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notes.png; path = MyFridge/notes.png; sourceTree = SOURCE_ROOT; };
-		2810FCC11E697EEB0099EC9D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = MyFridge/home.png; sourceTree = SOURCE_ROOT; };
-		2810FCC21E697EEB0099EC9D /* mylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mylist.png; path = MyFridge/mylist.png; sourceTree = SOURCE_ROOT; };
 		2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeUiTabBarItem.swift; sourceTree = "<group>"; };
 		2855AB1C1E681452005C696D /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB1F1E681452005C696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,12 +110,12 @@
 				2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */,
 				2855AB1F1E681452005C696D /* AppDelegate.swift */,
 				2855AB211E681452005C696D /* ViewController.swift */,
+				280F71EF1E69A97D006D159E /* courses.png */,
 				2855AB231E681452005C696D /* Main.storyboard */,
+				280F71F11E69AA45006D159E /* notifs.png */,
+				280F71ED1E69A921006D159E /* eat.png */,
 				2855AB261E681452005C696D /* Assets.xcassets */,
 				2855AB281E681452005C696D /* LaunchScreen.storyboard */,
-				2810FCC01E697EEB0099EC9D /* notes.png */,
-				2810FCC11E697EEB0099EC9D /* home.png */,
-				2810FCC21E697EEB0099EC9D /* mylist.png */,
 			);
 			path = MyFridge;
 			sourceTree = "<group>";
@@ -245,13 +245,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2810FCC31E697EEB0099EC9D /* notes.png in Resources */,
 				2810FCB71E6976E50099EC9D /* fridge.png in Resources */,
-				2810FCC41E697EEB0099EC9D /* home.png in Resources */,
+				280F71F21E69AA45006D159E /* notifs.png in Resources */,
 				2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */,
+				280F71F01E69A97D006D159E /* courses.png in Resources */,
+				280F71EE1E69A921006D159E /* eat.png in Resources */,
 				2855AB271E681452005C696D /* Assets.xcassets in Resources */,
 				2855AB251E681452005C696D /* Main.storyboard in Resources */,
-				2810FCC51E697EEB0099EC9D /* mylist.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
