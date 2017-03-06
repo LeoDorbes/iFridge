@@ -46,17 +46,6 @@ class ViewController: UITableViewController {
                 userInfo:["message":"Hello there!", "date":Date()])
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("You selected cell number: \(indexPath.row)!")
-        CourseItemListSingleton.instance.switchState(row: indexPath.row)
-    }
-    
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        NSLog("You deselected cell number: \(indexPath.row)!")
-        CourseItemListSingleton.instance.switchState(row: indexPath.row)
-    }
-    
-
     func catchNotification(notification:Notification) -> Void {
         print("Catch notification")
         
@@ -67,18 +56,24 @@ class ViewController: UITableViewController {
                 return
         }
         
-
         let alert = UIAlertController(title: "Notification!",
                                       message:"\(message) received at \(date)",
             preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
-
+        
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("You selected cell number: \(indexPath.row)!")
+        CourseItemListSingleton.instance.switchState(row: indexPath.row)
+    }
     
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        NSLog("You deselected cell number: \(indexPath.row)!")
+        CourseItemListSingleton.instance.switchState(row: indexPath.row)
+    }
     
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
