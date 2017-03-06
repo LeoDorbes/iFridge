@@ -37,6 +37,7 @@ class ViewController: UITableViewController {
                 userInfo:["message":"Hello there!", "date":Date()])
     }
     
+    
     func catchNotification(notification:Notification) -> Void {
         print("Catch notification")
         
