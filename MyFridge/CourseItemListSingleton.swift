@@ -35,4 +35,11 @@ class CourseItemListSingleton {
         self.items.append(item)
     }
     
+    func switchState(row : Int){
+        self.items[row].switchstate()
+    }
+    
+    func isSelected(row : Int) -> Bool{
+        return self.items[row].getState()
+    }
 }

@@ -33,7 +33,7 @@ class ViewController: UITableViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) { 
         super.viewDidAppear(animated)
         let nc = NotificationCenter.default
         nc.post(name:myNotification,
@@ -43,10 +43,12 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         NSLog("You selected cell number: \(indexPath.row)!")
+        CourseItemListSingleton.instance.switchState(row: indexPath.row)
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         NSLog("You deselected cell number: \(indexPath.row)!")
+        CourseItemListSingleton.instance.switchState(row: indexPath.row)
     }
     
 
@@ -81,7 +83,9 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
         let row = indexPath.row
         cell.textLabel?.text = CourseItemListSingleton.instance.getElementAt(row: row).getName()
-        self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        if(CourseItemListSingleton.instance.isSelected(row: row)){
+            self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        }
         return cell
     }
     
