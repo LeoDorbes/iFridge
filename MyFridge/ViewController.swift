@@ -77,6 +77,10 @@ class ViewController: UITableViewController {
         
         present(ac, animated: true)
     }
+    
+    func addToMonFrigo() {
+        
+    }
 
 }
 
