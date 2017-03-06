@@ -11,7 +11,6 @@
 		280F71F01E69A97D006D159E /* courses.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71EF1E69A97D006D159E /* courses.png */; };
 		280F71F21E69AA45006D159E /* notifs.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71F11E69AA45006D159E /* notifs.png */; };
 		2810FCB71E6976E50099EC9D /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCB61E6976E50099EC9D /* fridge.png */; };
-		2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */; };
 		2855AB201E681452005C696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB1F1E681452005C696D /* AppDelegate.swift */; };
 		2855AB221E681452005C696D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB211E681452005C696D /* CourseViewController.swift */; };
 		2855AB251E681452005C696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB231E681452005C696D /* Main.storyboard */; };
@@ -48,7 +47,6 @@
 		280F71EF1E69A97D006D159E /* courses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = courses.png; sourceTree = "<group>"; };
 		280F71F11E69AA45006D159E /* notifs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifs.png; sourceTree = "<group>"; };
 		2810FCB61E6976E50099EC9D /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge.png; sourceTree = "<group>"; };
-		2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeUiTabBarItem.swift; sourceTree = "<group>"; };
 		2855AB1C1E681452005C696D /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB1F1E681452005C696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2855AB211E681452005C696D /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				2810FCB61E6976E50099EC9D /* fridge.png */,
-				2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */,
 				2855AB1F1E681452005C696D /* AppDelegate.swift */,
 				2855AB211E681452005C696D /* CourseViewController.swift */,
 				280F71EF1E69A97D006D159E /* courses.png */,
@@ -300,7 +297,6 @@
 				62519A441E6D97EF008B2DEA /* FridgeItem.swift in Sources */,
 				62519A421E6D975C008B2DEA /* FridgeItemListSingleton.swift in Sources */,
 				2855AB221E681452005C696D /* CourseViewController.swift in Sources */,
-				2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */,
 				2855AB201E681452005C696D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
