@@ -31,7 +31,7 @@ class CourseItemListSingleton {
         self.items.remove(at: row)
     }
     
-    func add(item : ItemList){
+    func add(item : CourseItem){
         self.items.append(item)
     }
     
