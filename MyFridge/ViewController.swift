@@ -55,8 +55,6 @@ class ViewController: UITableViewController {
     }
     
     
-    
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -88,7 +86,6 @@ class ViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func promptForAnswer() {
         let ac = UIAlertController(title: "Entrez l'article", message: nil, preferredStyle: .alert)
