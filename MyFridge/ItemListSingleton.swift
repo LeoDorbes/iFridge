@@ -10,13 +10,29 @@ import UIKit
 
 class ItemListSingleton {
     
-    public var elements
+    private var itemList: [ItemList]
     
-    static let list = ItemListSingleton()
+    static var instance = ItemListSingleton()
     
     private init() {
-        elements = ItemList()
+        itemList = []
     }
     
+    func getElementAt(row : Int) -> ItemList{
+        
+        return self.itemList[row]
+    }
+    
+    func getCount() -> Int {
+        return self.itemList.count
+    }
+    
+    func removeAt(row : Int) {
+        self.itemList.remove(at: row)
+    }
+    
+    func add(item : ItemList){
+        self.itemList.append(item)
+    }
     
 }
