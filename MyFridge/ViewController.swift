@@ -41,6 +41,15 @@ class ViewController: UITableViewController {
                 userInfo:["message":"Hello there!", "date":Date()])
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("You selected cell number: \(indexPath.row)!")
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        NSLog("You deselected cell number: \(indexPath.row)!")
+    }
+    
+
     func catchNotification(notification:Notification) -> Void {
         print("Catch notification")
         
