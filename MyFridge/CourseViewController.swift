@@ -8,9 +8,12 @@
 
 import UIKit
 
-class CourseViewController: UITableViewController {
-
+class CourseTableViewCell : UITableViewCell{
+    @IBOutlet weak var itemName: UILabel!
     
+    @IBOutlet weak var deleteBtn: UIButton!
+}
+class CourseViewController: UITableViewController {
     let myNotification = Notification.Name(rawValue:"MyNotification")
 
     
