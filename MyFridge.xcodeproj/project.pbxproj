@@ -13,7 +13,7 @@
 		2810FCB71E6976E50099EC9D /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCB61E6976E50099EC9D /* fridge.png */; };
 		2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */; };
 		2855AB201E681452005C696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB1F1E681452005C696D /* AppDelegate.swift */; };
-		2855AB221E681452005C696D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB211E681452005C696D /* ViewController.swift */; };
+		2855AB221E681452005C696D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB211E681452005C696D /* CourseViewController.swift */; };
 		2855AB251E681452005C696D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB231E681452005C696D /* Main.storyboard */; };
 		2855AB271E681452005C696D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB261E681452005C696D /* Assets.xcassets */; };
 		2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB281E681452005C696D /* LaunchScreen.storyboard */; };
@@ -48,7 +48,7 @@
 		2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeUiTabBarItem.swift; sourceTree = "<group>"; };
 		2855AB1C1E681452005C696D /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB1F1E681452005C696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2855AB211E681452005C696D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2855AB211E681452005C696D /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		2855AB241E681452005C696D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2855AB261E681452005C696D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2855AB291E681452005C696D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 				2810FCB61E6976E50099EC9D /* fridge.png */,
 				2810FCC61E698AB00099EC9D /* FridgeUiTabBarItem.swift */,
 				2855AB1F1E681452005C696D /* AppDelegate.swift */,
-				2855AB211E681452005C696D /* ViewController.swift */,
+				2855AB211E681452005C696D /* CourseViewController.swift */,
 				280F71EF1E69A97D006D159E /* courses.png */,
 				2855AB231E681452005C696D /* Main.storyboard */,
 				280F71F11E69AA45006D159E /* notifs.png */,
@@ -287,7 +287,7 @@
 			files = (
 				624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */,
 				624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */,
-				2855AB221E681452005C696D /* ViewController.swift in Sources */,
+				2855AB221E681452005C696D /* CourseViewController.swift in Sources */,
 				2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */,
 				2855AB201E681452005C696D /* AppDelegate.swift in Sources */,
 			);
