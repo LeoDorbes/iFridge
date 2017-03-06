@@ -34,7 +34,7 @@
         <!--Ma liste de courses-->
         <scene sceneID="0Vh-3r-VUC">
             <objects>
-                <tableViewController id="x3y-X0-w2G" customClass="ViewController" customModule="MyFridge" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="x3y-X0-w2G" customClass="CourseViewController" customModule="MyFridge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="isx-zE-bdr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
         <!--Mon Frigo-->
         <scene sceneID="ERG-vw-hPY">
             <objects>
-                <tableViewController id="CWM-dq-0wA" sceneMemberID="viewController">
+                <tableViewController id="CWM-dq-0wA" customClass="FridgeViewController" customModule="MyFridge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OxP-m5-SmL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

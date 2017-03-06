@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class CourseViewController: UITableViewController {
 
     
     let myNotification = Notification.Name(rawValue:"MyNotification")
