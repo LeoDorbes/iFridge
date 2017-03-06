@@ -10,10 +10,9 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    var liste : [ String ] = []
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return liste.count
+        return ItemListSingleton.instance.getCount()
     }
     @IBAction func addBtnPressed(_ sender: Any) {
         promptForAnswer()
@@ -26,14 +25,14 @@ class ViewController: UITableViewController {
     
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        print(liste.count)
+        
         return 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
         let row = indexPath.row
-        cell.textLabel?.text = liste[row]
+        cell.textLabel?.text = ItemListSingleton.instance.getElementAt(row: row).getName()
         return cell
     }
     
@@ -44,7 +43,9 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             let row = indexPath.row
-            liste.remove(at: row)
+            
+            ItemListSingleton.instance.removeAt(row: row)
+            //ItemListSingleton.list.itemList.getElements().remove(at: row)
             self.tableView.reloadData()
             // handle delete (by removing the data from your array and updating the tableview)
         }
@@ -66,7 +67,8 @@ class ViewController: UITableViewController {
             if let answer = ac.textFields![0].text
             {
             // do something interesting with "answer" here
-                self.liste.append(answer)
+                ItemListSingleton.instance.add(item : ItemList(n: answer))
+                //ItemListSingleton.list.itemList.getElements().append(answer)
                 self.tableView.reloadData()
             }
         }
