@@ -68,7 +68,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="action" id="DYG-fr-Yhv">
                             <color key="tintColor" red="0.99970108270645142" green="0.57636755704879761" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="endBtnPressed:" destination="x3y-X0-w2G" id="Lmt-C7-YfS"/>
+                                <action selector="sendBtnPressed:" destination="x3y-X0-w2G" id="LO1-tB-AtX"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C7Z-7I-k4C">
@@ -174,7 +174,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NH9-vV-ByE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1222" y="616"/>
+            <point key="canvasLocation" x="-810" y="616"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="3Gf-Ie-QFV">
@@ -203,7 +203,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86h-te-3Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-503" y="616"/>
+            <point key="canvasLocation" x="-68" y="616"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="9kK-dH-S3V">

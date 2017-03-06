@@ -36,6 +36,14 @@ class FridgeViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    
+    func AddCourseList() {
+
+        
+        //FridgeItemListSingleton.instance.add(item : CourseItem(n: answer))
+        //self.tableView.reloadData()
+        
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

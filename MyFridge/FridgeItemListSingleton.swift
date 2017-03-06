@@ -35,4 +35,16 @@ class FridgeItemListSingleton {
         self.items.append(item)
     }
 
+    func addCourseItems(){
+        
+        for i in 0 ..< CourseItemListSingleton.instance.getCount(){
+            
+            if(CourseItemListSingleton.instance.getElementAt(row: i).getState()){
+                let f: FridgeItem = FridgeItem(name: CourseItemListSingleton.instance.getElementAt(row: i).getName() )
+                FridgeItemListSingleton.instance.add(item: f)
+            }
+        }
+        CourseItemListSingleton.instance.removeAll()
+            
+    }
 }

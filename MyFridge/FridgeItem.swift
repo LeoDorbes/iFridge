@@ -10,8 +10,8 @@ class FridgeItem{
     
     var  name : String
     
-    public init(n : String) {
-        self.name = n
+    public init(name : String) {
+        self.name = name
     }
     
     public func getName() -> String{

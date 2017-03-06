@@ -21,7 +21,10 @@ class CourseViewController: UITableViewController {
         promptForAnswer()
     }
     
-    @IBAction func endBtnPressed(_ sender: Any) {
+    @IBAction func sendBtnPressed(_ sender: Any)
+    {
+        FridgeItemListSingleton.instance.addCourseItems()
+        self.tableView.reloadData()
         print("fini")
     }
     

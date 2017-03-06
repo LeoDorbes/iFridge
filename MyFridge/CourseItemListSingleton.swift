@@ -42,4 +42,8 @@ class CourseItemListSingleton {
     func isSelected(row : Int) -> Bool{
         return self.items[row].getState()
     }
+    
+    func removeAll(){
+        items.removeAll()
+    }
 }
