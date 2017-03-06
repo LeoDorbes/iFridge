@@ -19,6 +19,8 @@
 		2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB281E681452005C696D /* LaunchScreen.storyboard */; };
 		2855AB351E681452005C696D /* MyFridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB341E681452005C696D /* MyFridgeTests.swift */; };
 		2855AB401E681452005C696D /* MyFridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB3F1E681452005C696D /* MyFridgeUITests.swift */; };
+		624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */; };
+		624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB51E6D593D00F66D36 /* CourseItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		2855AB3B1E681452005C696D /* MyFridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB3F1E681452005C696D /* MyFridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeUITests.swift; sourceTree = "<group>"; };
 		2855AB411E681452005C696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItemListSingleton.swift; sourceTree = "<group>"; };
+		624D9DB51E6D593D00F66D36 /* CourseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				280F71ED1E69A921006D159E /* eat.png */,
 				2855AB261E681452005C696D /* Assets.xcassets */,
 				2855AB281E681452005C696D /* LaunchScreen.storyboard */,
+				624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */,
+				624D9DB51E6D593D00F66D36 /* CourseItem.swift */,
 			);
 			path = MyFridge;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */,
+				624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */,
 				2855AB221E681452005C696D /* ViewController.swift in Sources */,
 				2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */,
 				2855AB201E681452005C696D /* AppDelegate.swift in Sources */,
