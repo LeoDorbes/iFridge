@@ -15,7 +15,6 @@ class CourseTableViewCell : UITableViewCell{
 class CourseViewController: UITableViewController {
     let myNotification = Notification.Name(rawValue:"MyNotification")
 
-    
     @IBAction func deleteRow(_ sender: Any) {
         var indexPath : NSIndexPath!
         if let button = sender as? UIButton {
@@ -29,6 +28,7 @@ class CourseViewController: UITableViewController {
             }
         }
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CourseItemListSingleton.instance.getCount()
     }
