@@ -54,18 +54,20 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-aJ-T0X">
-                                            <rect key="frame" x="295" y="6" width="72" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb7-aJ-T0X">
+                                            <rect key="frame" x="317" y="5" width="31" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Supprimer"/>
+                                            <state key="normal" title="Supprimer" image="trash.png"/>
+                                            <connections>
+                                                <action selector="deleteRow:" destination="x3y-X0-w2G" eventType="touchUpInside" id="MRW-RM-glS"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                                 <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="deleteBtn" destination="fb7-aJ-T0X" id="WQN-gh-GtV"/>
-                                    <outlet property="itemName" destination="wBF-Z4-aGX" id="ifI-yP-ngO"/>
+                                    <outlet property="itemName" destination="wBF-Z4-aGX" id="oof-Tw-xRQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -94,7 +96,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y39-jg-9jQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="-754"/>
+            <point key="canvasLocation" x="-68" y="-754.27286356821594"/>
         </scene>
         <!--Mon Frigo-->
         <scene sceneID="ERG-vw-hPY">
@@ -233,6 +235,21 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebb-ra-NIu" id="7yz-pD-BLG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-6K-C99">
+                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMN-fR-1CI">
+                                            <rect key="frame" x="346" y="12" width="19" height="19"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Button" image="trash.png"/>
+                                        </button>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -244,7 +261,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yak-1q-Fo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="-82"/>
+            <point key="canvasLocation" x="645.60000000000002" y="-82.3088455772114"/>
         </scene>
         <!--Liste-->
         <scene sceneID="tjc-KB-xtu">
@@ -289,5 +306,6 @@
         <image name="courses.png" width="32" height="32"/>
         <image name="eat.png" width="22" height="22"/>
         <image name="notifs.png" width="32" height="32"/>
+        <image name="trash.png" width="32" height="32"/>
     </resources>
 </document>
