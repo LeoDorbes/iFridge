@@ -21,6 +21,9 @@
 		2855AB401E681452005C696D /* MyFridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB3F1E681452005C696D /* MyFridgeUITests.swift */; };
 		624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */; };
 		624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB51E6D593D00F66D36 /* CourseItem.swift */; };
+		62519A401E6D96C0008B2DEA /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */; };
+		62519A421E6D975C008B2DEA /* FridgeItemListSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62519A411E6D975C008B2DEA /* FridgeItemListSingleton.swift */; };
+		62519A441E6D97EF008B2DEA /* FridgeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62519A431E6D97EF008B2DEA /* FridgeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		2855AB411E681452005C696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItemListSingleton.swift; sourceTree = "<group>"; };
 		624D9DB51E6D593D00F66D36 /* CourseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
+		62519A411E6D975C008B2DEA /* FridgeItemListSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeItemListSingleton.swift; sourceTree = "<group>"; };
+		62519A431E6D97EF008B2DEA /* FridgeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,9 @@
 				2855AB281E681452005C696D /* LaunchScreen.storyboard */,
 				624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */,
 				624D9DB51E6D593D00F66D36 /* CourseItem.swift */,
+				62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */,
+				62519A411E6D975C008B2DEA /* FridgeItemListSingleton.swift */,
+				62519A431E6D97EF008B2DEA /* FridgeItem.swift */,
 			);
 			path = MyFridge;
 			sourceTree = "<group>";
@@ -286,7 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */,
+				62519A401E6D96C0008B2DEA /* FridgeViewController.swift in Sources */,
 				624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */,
+				62519A441E6D97EF008B2DEA /* FridgeItem.swift in Sources */,
+				62519A421E6D975C008B2DEA /* FridgeItemListSingleton.swift in Sources */,
 				2855AB221E681452005C696D /* CourseViewController.swift in Sources */,
 				2810FCC71E698AB00099EC9D /* FridgeUiTabBarItem.swift in Sources */,
 				2855AB201E681452005C696D /* AppDelegate.swift in Sources */,
