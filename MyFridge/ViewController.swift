@@ -12,7 +12,7 @@ class ViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ItemListSingleton.instance.getCount()
+        return CourseItemListSingleton.instance.getCount()
     }
     @IBAction func addBtnPressed(_ sender: Any) {
         promptForAnswer()
@@ -32,7 +32,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
         let row = indexPath.row
-        cell.textLabel?.text = ItemListSingleton.instance.getElementAt(row: row).getName()
+        cell.textLabel?.text = CourseItemListSingleton.instance.getElementAt(row: row).getName()
         return cell
     }
     
@@ -44,7 +44,7 @@ class ViewController: UITableViewController {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             let row = indexPath.row
             
-            ItemListSingleton.instance.removeAt(row: row)
+            CourseItemListSingleton.instance.removeAt(row: row)
             //ItemListSingleton.list.itemList.getElements().remove(at: row)
             self.tableView.reloadData()
             // handle delete (by removing the data from your array and updating the tableview)
@@ -67,7 +67,7 @@ class ViewController: UITableViewController {
             if let answer = ac.textFields![0].text
             {
             // do something interesting with "answer" here
-                ItemListSingleton.instance.add(item : ItemList(n: answer))
+                CourseItemListSingleton.instance.add(item : CourseItem(n: answer))
                 //ItemListSingleton.list.itemList.getElements().append(answer)
                 self.tableView.reloadData()
             }

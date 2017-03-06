@@ -8,31 +8,31 @@
 
 import UIKit
 
-class ItemListSingleton {
+class CourseItemListSingleton {
     
-    private var itemList: [ItemList]
+    private var items: [CourseItem]
     
-    static var instance = ItemListSingleton()
+    static var instance = CourseItemListSingleton()
     
     private init() {
-        itemList = []
+        items = []
     }
     
-    func getElementAt(row : Int) -> ItemList{
+    func getElementAt(row : Int) -> CourseItem{
         
-        return self.itemList[row]
+        return self.items[row]
     }
     
     func getCount() -> Int {
-        return self.itemList.count
+        return self.items.count
     }
     
     func removeAt(row : Int) {
-        self.itemList.remove(at: row)
+        self.items.remove(at: row)
     }
     
     func add(item : ItemList){
-        self.itemList.append(item)
+        self.items.append(item)
     }
     
 }

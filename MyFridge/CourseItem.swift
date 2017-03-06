@@ -6,7 +6,7 @@
 //  Copyright © 2017 Léo Dorbes. All rights reserved.
 //
 
-class ItemList{
+class CourseItem{
     
     var  name : String
 
