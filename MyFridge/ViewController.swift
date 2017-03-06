@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UITableViewController {
+
     
     let myNotification = Notification.Name(rawValue:"MyNotification")
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CourseItemListSingleton.instance.getCount()
@@ -20,6 +22,8 @@ class ViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.allowsMultipleSelectionDuringEditing = true
+        tableView.setEditing(true, animated: false)
         // Do any additional setup after loading the view, typically from a nib.
         let nc = NotificationCenter.default // Note that default is now a property, not a method call
         nc.addObserver(forName:Notification.Name(rawValue:"MyNotification"),
@@ -47,11 +51,13 @@ class ViewController: UITableViewController {
                 return
         }
         
+
         let alert = UIAlertController(title: "Notification!",
                                       message:"\(message) received at \(date)",
             preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+
     }
     
     
@@ -66,8 +72,10 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
         let row = indexPath.row
         cell.textLabel?.text = CourseItemListSingleton.instance.getElementAt(row: row).getName()
+        self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
         return cell
     }
+    
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
