@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
+    
+    let myNotification = Notification.Name(rawValue:"MyNotification")
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CourseItemListSingleton.instance.getCount()
@@ -20,8 +21,40 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let nc = NotificationCenter.default // Note that default is now a property, not a method call
+        nc.addObserver(forName:Notification.Name(rawValue:"MyNotification"),
+                       object:nil, queue:nil) {
+                        notification in
+                        // Handle notification
+        }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let nc = NotificationCenter.default
+        nc.post(name:myNotification,
+                object: nil,
+                userInfo:["message":"Hello there!", "date":Date()])
+    }
+    
+    func catchNotification(notification:Notification) -> Void {
+        print("Catch notification")
+        
+        guard let userInfo = notification.userInfo,
+            let message  = userInfo["message"] as? String,
+            let date     = userInfo["date"]    as? Date else {
+                print("No userInfo found in notification")
+                return
+        }
+        
+        let alert = UIAlertController(title: "Notification!",
+                                      message:"\(message) received at \(date)",
+            preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     
 
     override func numberOfSections(in tableView: UITableView) -> Int {
