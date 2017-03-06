@@ -65,6 +65,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Ma liste de courses" id="VnN-FN-8ag">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="DYG-fr-Yhv">
+                            <color key="tintColor" red="0.99970108270645142" green="0.57636755704879761" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="endBtnPressed:" destination="x3y-X0-w2G" id="Lmt-C7-YfS"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C7Z-7I-k4C">
                             <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>

@@ -20,6 +20,11 @@ class ViewController: UITableViewController {
     @IBAction func addBtnPressed(_ sender: Any) {
         promptForAnswer()
     }
+    
+    @IBAction func endBtnPressed(_ sender: Any) {
+        print("fini")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsMultipleSelectionDuringEditing = true
