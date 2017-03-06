@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class CourseViewController: UITableViewController {
 
     
     let myNotification = Notification.Name(rawValue:"MyNotification")
@@ -20,6 +20,11 @@ class ViewController: UITableViewController {
     @IBAction func addBtnPressed(_ sender: Any) {
         promptForAnswer()
     }
+    
+    @IBAction func endBtnPressed(_ sender: Any) {
+        print("fini")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsMultipleSelectionDuringEditing = true
@@ -33,7 +38,7 @@ class ViewController: UITableViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) { 
         super.viewDidAppear(animated)
         let nc = NotificationCenter.default
         nc.post(name:myNotification,
@@ -41,7 +46,17 @@ class ViewController: UITableViewController {
                 userInfo:["message":"Hello there!", "date":Date()])
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("You selected cell number: \(indexPath.row)!")
+        CourseItemListSingleton.instance.switchState(row: indexPath.row)
+    }
     
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        NSLog("You deselected cell number: \(indexPath.row)!")
+        CourseItemListSingleton.instance.switchState(row: indexPath.row)
+    }
+    
+
     func catchNotification(notification:Notification) -> Void {
         print("Catch notification")
         
@@ -62,6 +77,8 @@ class ViewController: UITableViewController {
     }
     
     
+    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -71,7 +88,9 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
         let row = indexPath.row
         cell.textLabel?.text = CourseItemListSingleton.instance.getElementAt(row: row).getName()
-        self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        if(CourseItemListSingleton.instance.isSelected(row: row)){
+            self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+        }
         return cell
     }
     
@@ -83,11 +102,8 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             let row = indexPath.row
-            
             CourseItemListSingleton.instance.removeAt(row: row)
-            //ItemListSingleton.list.itemList.getElements().remove(at: row)
             self.tableView.reloadData()
-            // handle delete (by removing the data from your array and updating the tableview)
         }
     }
     
@@ -96,12 +112,13 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     func promptForAnswer() {
         let ac = UIAlertController(title: "Entrez l'article", message: nil, preferredStyle: .alert)
         ac.addTextField{(textfield : UITextField) -> Void in
             textfield.placeholder = "Nom"
         }
-        
+       
         let submitAction = UIAlertAction(title: "Ok", style: .default) { [unowned ac] _ in
             if let answer = ac.textFields![0].text
             {
@@ -116,7 +133,6 @@ class ViewController: UITableViewController {
         
         present(ac, animated: true)
     }
-
 
 }
 
