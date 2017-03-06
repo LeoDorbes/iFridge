@@ -8,11 +8,26 @@
 
 import UIKit
 
-class CourseViewController: UITableViewController {
-
+class CourseTableViewCell : UITableViewCell{
     
+    @IBOutlet weak var itemName: UILabel!
+}
+class CourseViewController: UITableViewController {
     let myNotification = Notification.Name(rawValue:"MyNotification")
 
+    @IBAction func deleteRow(_ sender: Any) {
+        var indexPath : NSIndexPath!
+        if let button = sender as? UIButton {
+            if let superview = button.superview {
+                if let cell = superview.superview as? UITableViewCell {
+                    indexPath = self.tableView.indexPath(for: cell) as NSIndexPath!
+                    CourseItemListSingleton.instance.removeAt(row: indexPath.row)
+                    self.tableView.reloadData()
+                    
+                }
+            }
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return CourseItemListSingleton.instance.getCount()
@@ -31,6 +46,7 @@ class CourseViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsMultipleSelectionDuringEditing = true
+        
         tableView.setEditing(true, animated: false)
         // Do any additional setup after loading the view, typically from a nib.
         let nc = NotificationCenter.default // Note that default is now a property, not a method call
@@ -83,9 +99,10 @@ class CourseViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath) as! CourseTableViewCell
         let row = indexPath.row
-        cell.textLabel?.text = CourseItemListSingleton.instance.getElementAt(row: row).getName()
+        
+        cell.itemName?.text = CourseItemListSingleton.instance.getElementAt(row: row).getName()
         if(CourseItemListSingleton.instance.isSelected(row: row)){
             self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
         }

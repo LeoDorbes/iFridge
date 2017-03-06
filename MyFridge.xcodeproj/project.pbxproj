@@ -10,6 +10,8 @@
 		280F71EE1E69A921006D159E /* eat.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71ED1E69A921006D159E /* eat.png */; };
 		280F71F01E69A97D006D159E /* courses.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71EF1E69A97D006D159E /* courses.png */; };
 		280F71F21E69AA45006D159E /* notifs.png in Resources */ = {isa = PBXBuildFile; fileRef = 280F71F11E69AA45006D159E /* notifs.png */; };
+		280FB3341E6DAAE300BE0AFD /* trash1.png in Resources */ = {isa = PBXBuildFile; fileRef = 280FB3331E6DAAE300BE0AFD /* trash1.png */; };
+		280FB3361E6DAE7F00BE0AFD /* trash-gray-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 280FB3351E6DAE7F00BE0AFD /* trash-gray-icon.png */; };
 		2810FCB71E6976E50099EC9D /* fridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 2810FCB61E6976E50099EC9D /* fridge.png */; };
 		2855AB201E681452005C696D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB1F1E681452005C696D /* AppDelegate.swift */; };
 		2855AB221E681452005C696D /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB211E681452005C696D /* CourseViewController.swift */; };
@@ -18,6 +20,7 @@
 		2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2855AB281E681452005C696D /* LaunchScreen.storyboard */; };
 		2855AB351E681452005C696D /* MyFridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB341E681452005C696D /* MyFridgeTests.swift */; };
 		2855AB401E681452005C696D /* MyFridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB3F1E681452005C696D /* MyFridgeUITests.swift */; };
+		5F9CE9CB1E6DAAB600CE0F14 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9CA1E6DAAB600CE0F14 /* trash.png */; };
 		624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */; };
 		624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB51E6D593D00F66D36 /* CourseItem.swift */; };
 		62519A401E6D96C0008B2DEA /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */; };
@@ -46,6 +49,8 @@
 		280F71ED1E69A921006D159E /* eat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eat.png; sourceTree = "<group>"; };
 		280F71EF1E69A97D006D159E /* courses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = courses.png; sourceTree = "<group>"; };
 		280F71F11E69AA45006D159E /* notifs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notifs.png; sourceTree = "<group>"; };
+		280FB3331E6DAAE300BE0AFD /* trash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash1.png; sourceTree = "<group>"; };
+		280FB3351E6DAE7F00BE0AFD /* trash-gray-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trash-gray-icon.png"; sourceTree = "<group>"; };
 		2810FCB61E6976E50099EC9D /* fridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fridge.png; sourceTree = "<group>"; };
 		2855AB1C1E681452005C696D /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB1F1E681452005C696D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 		2855AB3B1E681452005C696D /* MyFridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2855AB3F1E681452005C696D /* MyFridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeUITests.swift; sourceTree = "<group>"; };
 		2855AB411E681452005C696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9CE9CA1E6DAAB600CE0F14 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trash.png; path = ../../Downloads/trash.png; sourceTree = SOURCE_ROOT; };
 		624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItemListSingleton.swift; sourceTree = "<group>"; };
 		624D9DB51E6D593D00F66D36 /* CourseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
@@ -117,8 +123,11 @@
 				2810FCB61E6976E50099EC9D /* fridge.png */,
 				2855AB1F1E681452005C696D /* AppDelegate.swift */,
 				2855AB211E681452005C696D /* CourseViewController.swift */,
+				5F9CE9CA1E6DAAB600CE0F14 /* trash.png */,
 				280F71EF1E69A97D006D159E /* courses.png */,
+				280FB3351E6DAE7F00BE0AFD /* trash-gray-icon.png */,
 				2855AB231E681452005C696D /* Main.storyboard */,
+				280FB3331E6DAAE300BE0AFD /* trash1.png */,
 				280F71F11E69AA45006D159E /* notifs.png */,
 				280F71ED1E69A921006D159E /* eat.png */,
 				2855AB261E681452005C696D /* Assets.xcassets */,
@@ -260,12 +269,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280FB3341E6DAAE300BE0AFD /* trash1.png in Resources */,
 				2810FCB71E6976E50099EC9D /* fridge.png in Resources */,
 				280F71F21E69AA45006D159E /* notifs.png in Resources */,
+				280FB3361E6DAE7F00BE0AFD /* trash-gray-icon.png in Resources */,
 				2855AB2A1E681452005C696D /* LaunchScreen.storyboard in Resources */,
 				280F71F01E69A97D006D159E /* courses.png in Resources */,
 				280F71EE1E69A921006D159E /* eat.png in Resources */,
 				2855AB271E681452005C696D /* Assets.xcassets in Resources */,
+				5F9CE9CB1E6DAAB600CE0F14 /* trash.png in Resources */,
 				2855AB251E681452005C696D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
