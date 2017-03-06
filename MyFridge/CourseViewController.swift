@@ -102,11 +102,8 @@ class CourseViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
             let row = indexPath.row
-            
             CourseItemListSingleton.instance.removeAt(row: row)
-            //ItemListSingleton.list.itemList.getElements().remove(at: row)
             self.tableView.reloadData()
-            // handle delete (by removing the data from your array and updating the tableview)
         }
     }
     
