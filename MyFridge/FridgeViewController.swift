@@ -8,6 +8,11 @@
 
 import UIKit
 
+class FruitTableViewCell: UITableViewCell {
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var productDate: UILabel!
+    
+}
 class FridgeViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -47,10 +52,17 @@ class FridgeViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath) as! FruitTableViewCell
         let row = indexPath.row
-        cell.textLabel?.text = FridgeItemListSingleton.instance.getElementAt(row: row).getName()
-        
+        let fridgeItem = FridgeItemListSingleton.instance.getElementAt(row: row)
+        cell.productName?.text = fridgeItem.getName()
+        if(fridgeItem.isSet()){
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM/dd/yy"
+            cell.productDate?.text =  dateFormatter.string(from: fridgeItem.getDate())
+        } else{
+            cell.productDate?.text = ""
+        }
         return cell
     }
     
@@ -60,7 +72,9 @@ class FridgeViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.delete) {
-            // handle delete (by removing the data from your array and updating the tableview)
+            let row = indexPath.row
+            FridgeItemListSingleton.instance.removeAt(row: row)
+            self.tableView.reloadData()
         }
     }
     

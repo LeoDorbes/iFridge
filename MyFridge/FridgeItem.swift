@@ -32,5 +32,9 @@ class FridgeItem{
         return date
     }
     
+    public func isSet() -> Bool {
+        return isDateSetted
+    }
+    
     
 }
