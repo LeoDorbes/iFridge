@@ -10,19 +10,23 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     var rowIndex = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(rowIndex > -1)
-        {
-            print("caca")
-        }
+        detailLabel.text = FridgeItemListSingleton.instance.getElementAt(row: rowIndex).getName()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func okBtn(_ sender: Any) {
+        var date = datePicker.date
+        FridgeItemListSingleton.instance.getElementAt(row: rowIndex).setDate(d: date)
     }
     
 

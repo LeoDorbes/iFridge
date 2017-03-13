@@ -360,5 +360,83 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFridge/DetailsViewController.swift"
+            timestampString = "511091959.064674"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "DetailsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFridge.DetailsViewController.rowIndex.getter : Swift.Int"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/DetailsViewController.swift"
+                  timestampString = "511091209.870469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFridge.DetailsViewController.rowIndex.setter : Swift.Int"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/DetailsViewController.swift"
+                  timestampString = "511091209.881228"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFridge.DetailsViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; MyFridge.DetailsViewController"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/DetailsViewController.swift"
+                  timestampString = "511091209.892448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFridge.DetailsViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;MyFridge.DetailsViewController&gt;"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/DetailsViewController.swift"
+                  timestampString = "511091209.907651"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
