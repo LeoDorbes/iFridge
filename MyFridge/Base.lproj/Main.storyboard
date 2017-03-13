@@ -39,6 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cellule" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cellule" textLabel="tHd-3j-zBb" style="IBUITableViewCellStyleDefault" id="HlD-Bx-cxQ" customClass="CourseTableViewCell" customModule="MyFridge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -106,6 +107,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cellule" textLabel="s8a-4N-BNU" style="IBUITableViewCellStyleDefault" id="gRo-y9-xDn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -212,11 +214,11 @@
             </objects>
             <point key="canvasLocation" x="639.20000000000005" y="-82.3088455772114"/>
         </scene>
-        <!--Notifications-->
+        <!--Péremption-->
         <scene sceneID="6gi-7i-7Ep">
             <objects>
                 <navigationController id="vsh-cL-Htk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" image="notifs.png" id="GDe-Dx-Uje"/>
+                    <tabBarItem key="tabBarItem" title="Péremption" image="notifs.png" id="GDe-Dx-Uje"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dTs-mY-O6r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -229,7 +231,7 @@
             </objects>
             <point key="canvasLocation" x="-810" y="616"/>
         </scene>
-        <!--Notifications-->
+        <!--Sera périmé bientôt :-->
         <scene sceneID="3Gf-Ie-QFV">
             <objects>
                 <tableViewController id="BPv-2N-XEu" sceneMemberID="viewController">
@@ -252,7 +254,7 @@
                             <outlet property="delegate" destination="BPv-2N-XEu" id="OJV-xc-mvG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notifications" id="LHN-VS-0EM"/>
+                    <navigationItem key="navigationItem" title="Sera périmé bientôt :" id="LHN-VS-0EM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86h-te-3Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
