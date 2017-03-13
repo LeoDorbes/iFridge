@@ -39,7 +39,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="sectionIndexColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cellule" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cellule" textLabel="tHd-3j-zBb" style="IBUITableViewCellStyleDefault" id="HlD-Bx-cxQ" customClass="CourseTableViewCell" customModule="MyFridge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -107,7 +106,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cellule" textLabel="s8a-4N-BNU" style="IBUITableViewCellStyleDefault" id="gRo-y9-xDn">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -154,22 +152,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-O9-9I4">
-                                <rect key="frame" x="14" y="181" width="346" height="400"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-O9-9I4">
+                                <rect key="frame" x="14" y="133" width="346" height="400"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WBz-Bn-DwS">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="27.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="26"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqV-Xk-ZNH">
-                                                <rect key="frame" x="0.0" y="0.0" width="346" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="26"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-H6-fFS">
+                                        <rect key="frame" x="0.0" y="41" width="346" height="50"/>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="KBy-vp-yHj">
-                                        <rect key="frame" x="0.0" y="42.5" width="346" height="357.5"/>
+                                        <rect key="frame" x="0.0" y="106" width="346" height="294"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez la date de péremption de votre aliment " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwP-ST-egj" userLabel="Choisissez la date de péremption de votre aliment">
                                                 <rect key="frame" x="0.0" y="0.0" width="346" height="18"/>
@@ -177,14 +178,14 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-yu-dLp">
-                                                <rect key="frame" x="0.0" y="27" width="346" height="279.5"/>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-yu-dLp">
+                                                <rect key="frame" x="0.0" y="27" width="346" height="216"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="511090336.59619099">
                                                     <!--2017-03-13 09:32:16 +0000-->
                                                 </date>
                                             </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-C1-AuJ">
-                                                <rect key="frame" x="0.0" y="315.5" width="346" height="42"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-C1-AuJ">
+                                                <rect key="frame" x="0.0" y="252" width="346" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="OK"/>
                                                 <connections>
@@ -194,15 +195,13 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="IPc-ra-DJw"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="q9m-O9-9I4" firstAttribute="centerX" secondItem="Sig-IJ-vhb" secondAttribute="centerX" id="4Mn-3j-pxw"/>
-                            <constraint firstItem="q9m-O9-9I4" firstAttribute="centerY" secondItem="Sig-IJ-vhb" secondAttribute="centerY" id="kAj-ld-Alp"/>
+                            <constraint firstItem="q9m-O9-9I4" firstAttribute="top" secondItem="1NO-Jt-yTN" secondAttribute="bottom" constant="69" id="Oyl-Pn-Xj8"/>
+                            <constraint firstItem="q9m-O9-9I4" firstAttribute="centerY" secondItem="Sig-IJ-vhb" secondAttribute="centerY" id="YNR-Ye-Eit"/>
+                            <constraint firstItem="q9m-O9-9I4" firstAttribute="centerX" secondItem="Sig-IJ-vhb" secondAttribute="centerX" id="pAE-pP-Ij0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -214,12 +213,12 @@
             </objects>
             <point key="canvasLocation" x="639.20000000000005" y="-82.3088455772114"/>
         </scene>
-        <!--Péremption-->
+        <!--Notifications-->
         <scene sceneID="6gi-7i-7Ep">
             <objects>
                 <navigationController id="vsh-cL-Htk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Péremption" image="notifs.png" id="GDe-Dx-Uje"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dTs-mY-O6r">
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notifs.png" id="GDe-Dx-Uje"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="dTs-mY-O6r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -231,7 +230,7 @@
             </objects>
             <point key="canvasLocation" x="-810" y="616"/>
         </scene>
-        <!--Sera périmé bientôt :-->
+        <!--Notifications-->
         <scene sceneID="3Gf-Ie-QFV">
             <objects>
                 <tableViewController id="BPv-2N-XEu" sceneMemberID="viewController">
@@ -254,7 +253,7 @@
                             <outlet property="delegate" destination="BPv-2N-XEu" id="OJV-xc-mvG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sera périmé bientôt :" id="LHN-VS-0EM"/>
+                    <navigationItem key="navigationItem" title="Notifications" id="LHN-VS-0EM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86h-te-3Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,7 +265,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C5J-rE-TRJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Liste" image="courses.png" id="3Ay-FB-nQL"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="05f-c5-rfI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="05f-c5-rfI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -286,7 +285,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sgD-gv-VcL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Fridge" image="eat.png" id="gBo-vE-vwz"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8dq-aC-OIC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8dq-aC-OIC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
