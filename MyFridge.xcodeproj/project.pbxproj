@@ -21,6 +21,7 @@
 		2855AB351E681452005C696D /* MyFridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB341E681452005C696D /* MyFridgeTests.swift */; };
 		2855AB401E681452005C696D /* MyFridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855AB3F1E681452005C696D /* MyFridgeUITests.swift */; };
 		5F9CE9CB1E6DAAB600CE0F14 /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9CE9CA1E6DAAB600CE0F14 /* trash.png */; };
+		5F9CE9CD1E76908700CE0F14 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CE9CC1E76908700CE0F14 /* DetailsViewController.swift */; };
 		624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */; };
 		624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624D9DB51E6D593D00F66D36 /* CourseItem.swift */; };
 		62519A401E6D96C0008B2DEA /* FridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */; };
@@ -65,6 +66,7 @@
 		2855AB3F1E681452005C696D /* MyFridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeUITests.swift; sourceTree = "<group>"; };
 		2855AB411E681452005C696D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F9CE9CA1E6DAAB600CE0F14 /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trash.png; path = ../../Downloads/trash.png; sourceTree = SOURCE_ROOT; };
+		5F9CE9CC1E76908700CE0F14 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItemListSingleton.swift; sourceTree = "<group>"; };
 		624D9DB51E6D593D00F66D36 /* CourseItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				624D9DB31E6D548700F66D36 /* CourseItemListSingleton.swift */,
 				624D9DB51E6D593D00F66D36 /* CourseItem.swift */,
 				62519A3F1E6D96C0008B2DEA /* FridgeViewController.swift */,
+				5F9CE9CC1E76908700CE0F14 /* DetailsViewController.swift */,
 				62519A411E6D975C008B2DEA /* FridgeItemListSingleton.swift */,
 				62519A431E6D97EF008B2DEA /* FridgeItem.swift */,
 			);
@@ -306,6 +309,7 @@
 				624D9DB41E6D548700F66D36 /* CourseItemListSingleton.swift in Sources */,
 				62519A401E6D96C0008B2DEA /* FridgeViewController.swift in Sources */,
 				624D9DB61E6D593D00F66D36 /* CourseItem.swift in Sources */,
+				5F9CE9CD1E76908700CE0F14 /* DetailsViewController.swift in Sources */,
 				62519A441E6D97EF008B2DEA /* FridgeItem.swift in Sources */,
 				62519A421E6D975C008B2DEA /* FridgeItemListSingleton.swift in Sources */,
 				2855AB221E681452005C696D /* CourseViewController.swift in Sources */,

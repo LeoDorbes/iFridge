@@ -63,4 +63,18 @@ class FridgeViewController: UITableViewController {
             // handle delete (by removing the data from your array and updating the tableview)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if(segue.identifier == "DetailSegue"){
+            if let detail =  segue.destination as? DetailsViewController,
+                let index = tableView.indexPathForSelectedRow?.row
+            {
+                detail.rowIndex = index
+            }
+        }
+        //tableView.indexPathForSelectedRow
+        
+    
+    }
 }

@@ -124,7 +124,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="uZS-7z-vGN" kind="show" id="iIC-Qh-Tsm"/>
+                                    <segue destination="cOa-WF-gwC" kind="showDetail" identifier="DetailSegue" id="OVr-5s-0lE"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -139,6 +139,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uab-5e-cKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68" y="-82"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="vq1-zF-JrB">
+            <objects>
+                <viewController id="cOa-WF-gwC" customClass="DetailsViewController" customModule="MyFridge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1NO-Jt-yTN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fem-ID-TPc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sig-IJ-vhb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jF-im-N7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="-82"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="6gi-7i-7Ep">
@@ -186,49 +204,6 @@
             </objects>
             <point key="canvasLocation" x="-68" y="616"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="9kK-dH-S3V">
-            <objects>
-                <tableViewController id="uZS-7z-vGN" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jLz-Jj-aVJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ebb-ra-NIu">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ebb-ra-NIu" id="7yz-pD-BLG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-6K-C99">
-                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMN-fR-1CI">
-                                            <rect key="frame" x="346" y="12" width="19" height="19"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <state key="normal" title="Button" image="trash.png"/>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="uZS-7z-vGN" id="ri0-xL-GUc"/>
-                            <outlet property="delegate" destination="uZS-7z-vGN" id="3jY-Bw-J7r"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yak-1q-Fo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="646" y="-82"/>
-        </scene>
         <!--Liste-->
         <scene sceneID="tjc-KB-xtu">
             <objects>
@@ -245,6 +220,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKW-4c-jEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Mon Frigo" id="Tbz-Ly-9TY"/>
             </objects>
             <point key="canvasLocation" x="-810.39999999999998" y="-754.27286356821594"/>
         </scene>
@@ -273,6 +249,5 @@
         <image name="eat.png" width="22" height="22"/>
         <image name="notifs.png" width="32" height="32"/>
         <image name="trash-gray-icon.png" width="16" height="16"/>
-        <image name="trash.png" width="32" height="32"/>
     </resources>
 </document>
