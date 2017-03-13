@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0kB-af-2J5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0kB-af-2J5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -194,11 +194,11 @@
             </objects>
             <point key="canvasLocation" x="645.60000000000002" y="-82.3088455772114"/>
         </scene>
-        <!--Notifications-->
+        <!--Péremption-->
         <scene sceneID="6gi-7i-7Ep">
             <objects>
                 <navigationController id="vsh-cL-Htk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" image="notifs.png" id="GDe-Dx-Uje"/>
+                    <tabBarItem key="tabBarItem" title="Péremption" image="notifs.png" id="GDe-Dx-Uje"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dTs-mY-O6r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -211,7 +211,7 @@
             </objects>
             <point key="canvasLocation" x="-810" y="616"/>
         </scene>
-        <!--Notifications-->
+        <!--Sera périmé bientôt :-->
         <scene sceneID="3Gf-Ie-QFV">
             <objects>
                 <tableViewController id="BPv-2N-XEu" sceneMemberID="viewController">
@@ -234,7 +234,7 @@
                             <outlet property="delegate" destination="BPv-2N-XEu" id="OJV-xc-mvG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Notifications" id="LHN-VS-0EM"/>
+                    <navigationItem key="navigationItem" title="Sera périmé bientôt :" id="LHN-VS-0EM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86h-te-3Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
