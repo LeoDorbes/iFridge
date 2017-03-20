@@ -14,7 +14,7 @@ class FruitTableViewCell: UITableViewCell {
     
 }
 class FridgeViewController: UITableViewController {
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -88,6 +88,8 @@ class FridgeViewController: UITableViewController {
             }
         }
         //tableView.indexPathForSelectedRow
+        
+        
         
     
     }
