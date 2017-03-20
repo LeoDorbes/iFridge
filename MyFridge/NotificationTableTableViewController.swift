@@ -8,6 +8,11 @@
 
 import UIKit
 
+class NotificationTableViewCell: UITableViewCell {
+    @IBOutlet weak var NotificationName: UILabel!
+    @IBOutlet weak var NotificationDays: UILabel!
+}
+
 class NotificationTableTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -34,13 +39,27 @@ class NotificationTableTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath) 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellule", for: indexPath) as! NotificationTableViewCell
         let row = indexPath.row
         let fridgeItem = FridgeItemListSingleton.instance.get10DaysAt(row: row)
-        cell.textLabel?.text = fridgeItem.getName()
+        cell.NotificationName?.text = fridgeItem.getName()
+        let daysLeft = getNumberofDay(dateBegin: fridgeItem.getDate())
+        if let day = daysLeft.day{
+            cell.NotificationDays.text = "\(day) Jours restant"
+        }
+        
         return cell
     }
     
+    func getNumberofDay(dateBegin : Date) -> DateComponents{
+        let calendar = Calendar.current
+        let date1 = calendar.startOfDay(for: Date())
+        let date2 = calendar.startOfDay(for: dateBegin)
+        
+        let components = calendar.dateComponents([.day], from: date1, to: date2)
+        
+        return components
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
