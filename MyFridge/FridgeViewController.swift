@@ -14,7 +14,15 @@ class FruitTableViewCell: UITableViewCell {
     
 }
 class FridgeViewController: UITableViewController {
+    
+    //label
+    @IBOutlet weak var lbl: UILabel!
 
+    @IBAction func stepper(_ sender: Any) {
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -88,6 +96,8 @@ class FridgeViewController: UITableViewController {
             }
         }
         //tableView.indexPathForSelectedRow
+        
+        
         
     
     }
