@@ -178,13 +178,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-H6-fFS">
                                         <rect key="frame" x="0.0" y="23.5" width="320" height="65.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-1S-Yrz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-1S-Yrz">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-oC-fCI">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-oC-fCI">
                                                 <rect key="frame" x="0.0" y="36.5" width="94" height="29"/>
                                                 <connections>
                                                     <action selector="stepper:" destination="cOa-WF-gwC" eventType="valueChanged" id="oeC-Rz-ZB0"/>
