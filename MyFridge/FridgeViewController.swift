@@ -17,12 +17,10 @@ class FridgeViewController: UITableViewController {
     
     //label
     @IBOutlet weak var lbl: UILabel!
-
-    @IBAction func stepper(_ sender: Any) {
+    
+    @IBAction func stepper(_ sender: UIStepper) {
+        lbl.text = String(sender.value)
     }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
