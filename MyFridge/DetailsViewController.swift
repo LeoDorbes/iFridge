@@ -13,6 +13,13 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    //label
+    @IBOutlet weak var lbl: UILabel!
+    //stepper
+    @IBAction func stepper(_ sender: UIStepper) {
+        lbl.text = String(sender.value)
+    }
+    
     var rowIndex = -1
     
     override func viewDidLoad() {

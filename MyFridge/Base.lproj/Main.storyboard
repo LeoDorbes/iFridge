@@ -128,20 +128,6 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObK-5N-ois">
-                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gLv-na-8xi">
-                                            <rect key="frame" x="58" y="7" width="94" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <connections>
-                                                <action selector="stepper:" destination="CWM-dq-0wA" eventType="valueChanged" id="kM3-ow-daE"/>
-                                            </connections>
-                                        </stepper>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -158,9 +144,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Mon Frigo" id="IAz-Hd-LBx"/>
-                    <connections>
-                        <outlet property="lbl" destination="ObK-5N-ois" id="gbO-D1-aiF"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uab-5e-cKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,39 +162,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-O9-9I4">
-                                <rect key="frame" x="14" y="133" width="346" height="400"/>
+                                <rect key="frame" x="27" y="133" width="320" height="400"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WBz-Bn-DwS">
-                                        <rect key="frame" x="0.0" y="0.0" width="346" height="24"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WBz-Bn-DwS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="8.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqV-Xk-ZNH">
-                                                <rect key="frame" x="0.0" y="0.0" width="346" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqV-Xk-ZNH">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="8.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-H6-fFS">
-                                        <rect key="frame" x="0.0" y="39" width="346" height="50"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="KBy-vp-yHj">
-                                        <rect key="frame" x="0.0" y="104" width="346" height="296"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nGI-H6-fFS">
+                                        <rect key="frame" x="0.0" y="23.5" width="320" height="65.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choisissez la date de péremption de votre aliment " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwP-ST-egj" userLabel="Choisissez la date de péremption de votre aliment">
-                                                <rect key="frame" x="0.0" y="0.0" width="346" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfh-1S-Yrz">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="w2g-oC-fCI">
+                                                <rect key="frame" x="0.0" y="36.5" width="94" height="29"/>
+                                                <connections>
+                                                    <action selector="stepper:" destination="cOa-WF-gwC" eventType="valueChanged" id="oeC-Rz-ZB0"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="KBy-vp-yHj">
+                                        <rect key="frame" x="0.0" y="104" width="320" height="296"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Choisissez la date de péremption de votre aliment " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwP-ST-egj" userLabel="Choisissez la date de péremption de votre aliment">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-yu-dLp">
-                                                <rect key="frame" x="0.0" y="27" width="346" height="216"/>
+                                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rEa-yu-dLp">
+                                                <rect key="frame" x="0.0" y="27" width="320" height="216"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="511090336.59619099">
                                                     <!--2017-03-13 09:32:16 +0000-->
                                                 </date>
                                             </datePicker>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-C1-AuJ">
-                                                <rect key="frame" x="0.0" y="252" width="346" height="44"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-C1-AuJ">
+                                                <rect key="frame" x="0.0" y="252" width="320" height="44"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="OK"/>
                                                 <connections>
@@ -233,6 +230,7 @@
                     <connections>
                         <outlet property="datePicker" destination="rEa-yu-dLp" id="ebc-Ge-93A"/>
                         <outlet property="detailLabel" destination="pqV-Xk-ZNH" id="djb-bz-OEo"/>
+                        <outlet property="lbl" destination="dfh-1S-Yrz" id="HNx-bS-Fzc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jF-im-N7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
