@@ -438,5 +438,115 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFridge/FridgeViewController.swift"
+            timestampString = "511094020.052912"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFridge/FridgeItemListSingleton.swift"
+            timestampString = "511096817.099612"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FridgeItemListSingleton"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_9575C315227D9B5A4AE527B2FD72CD3B_func0"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/FridgeItemListSingleton.swift"
+                  timestampString = "511096817.667899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyFridge.FridgeItemListSingleton.instance.unsafeMutableAddressor : MyFridge.FridgeItemListSingleton"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/FridgeItemListSingleton.swift"
+                  timestampString = "511096817.685569"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MyFridge.FridgeItemListSingleton.instance.getter : MyFridge.FridgeItemListSingleton"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/FridgeItemListSingleton.swift"
+                  timestampString = "511096817.706036"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static MyFridge.FridgeItemListSingleton.instance.setter : MyFridge.FridgeItemListSingleton"
+                  moduleName = "MyFridge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexhawk/Documents/iFridge/MyFridge/FridgeItemListSingleton.swift"
+                  timestampString = "511096817.720918"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyFridge/FridgeItemListSingleton.swift"
+            timestampString = "511098203.502456"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getCount()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -25,8 +25,9 @@ class DetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func okBtn(_ sender: Any) {
-        var date = datePicker.date
+        let date = datePicker.date
         FridgeItemListSingleton.instance.getElementAt(row: rowIndex).setDate(d: date)
+        _ = navigationController?.popViewController(animated: true)
     }
     
 
