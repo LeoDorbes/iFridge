@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				2810FCB61E6976E50099EC9D /* fridge.png */,
-				2855AB1F1E681452005C696D /* AppDelegate.swift */,
 				2855AB211E681452005C696D /* CourseViewController.swift */,
+				2855AB1F1E681452005C696D /* AppDelegate.swift */,
 				280F71EF1E69A97D006D159E /* courses.png */,
 				280FB3351E6DAE7F00BE0AFD /* trash-gray-icon.png */,
 				2855AB231E681452005C696D /* Main.storyboard */,
