@@ -17,7 +17,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var lbl: UILabel!
     //stepper
     @IBAction func stepper(_ sender: UIStepper) {
-        lbl.text = String(sender.value)
+        lbl.text = Int(sender.value).description
     }
     
     var rowIndex = -1
