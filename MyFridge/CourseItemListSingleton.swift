@@ -43,7 +43,17 @@ class CourseItemListSingleton {
         return self.items[row].getState()
     }
     
+    func isContain(text : String) -> Bool{
+        for item in self.items {
+            if(item.getName() == text){
+                return true
+            }
+        }
+        return false
+    }
+    
     func removeAll(){
         items.removeAll()
     }
+
 }

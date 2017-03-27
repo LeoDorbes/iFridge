@@ -132,15 +132,21 @@ class CourseViewController: UITableViewController {
         let ac = UIAlertController(title: "Entrez l'article", message: nil, preferredStyle: .alert)
         ac.addTextField{(textfield : UITextField) -> Void in
             textfield.placeholder = "Nom"
+            textfield.autocorrectionType = .yes
+            textfield.spellCheckingType = .yes
         }
         
         let submitAction = UIAlertAction(title: "Ok", style: .default) { [unowned ac] _ in
             if let answer = ac.textFields![0].text
             {
-            // do something interesting with "answer" here
-                CourseItemListSingleton.instance.add(item : CourseItem(n: answer))
-                //ItemListSingleton.list.itemList.getElements().append(answer)
-                self.tableView.reloadData()
+                if answer != ""{
+                    if(!CourseItemListSingleton.instance.isContain(text: answer)){
+                        // do something interesting with "answer" here
+                        CourseItemListSingleton.instance.add(item : CourseItem(n: answer))
+                        //ItemListSingleton.list.itemList.getElements().append(answer)
+                        self.tableView.reloadData()
+                    }
+                }
             }
         }
         

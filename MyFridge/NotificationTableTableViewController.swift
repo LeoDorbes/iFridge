@@ -44,7 +44,7 @@ class NotificationTableTableViewController: UITableViewController {
         let fridgeItem = FridgeItemListSingleton.instance.get10DaysAt(row: row)
         cell.NotificationName?.text = fridgeItem.getName()
         let daysLeft = getNumberofDay(dateBegin: fridgeItem.getDate())
-        if let day = daysLeft.day{
+        if let day = daysLeft.day{						
             cell.NotificationDays.text = "\(day) Jours restant"
         }
         
